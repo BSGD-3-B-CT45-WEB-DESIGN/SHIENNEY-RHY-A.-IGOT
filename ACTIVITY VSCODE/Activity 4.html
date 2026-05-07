@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Playlist</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: url('lany.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+        .playlist-bar {
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 15px;
+        }
+
+        .scroll-text {
+            display: inline-block;
+            color: #00e5ff;
+            font-size: 20px;
+            font-weight: bold;
+            padding-left: 100%;
+            animation: scroll 20s linear infinite;
+            scroll-behavior: smooth;
+            text-shadow: 0 0 8px #00e5ff, 0 0 20px #00e5ff, 0 0 40px #00e5ff;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .audio-box {
+            text-align: center;
+        }
+
+        .gif-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .gif {
+            width: 40px;
+            height: 40px;
+        }
+
+        .gif-label {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .playlist {
+            padding: 20px;
+            color: white;
+        }
+
+        .soft2-title {
+            color: white;
+            transition: color 0.3s;
+            cursor: default;
+        }
+
+        .soft2-title:hover {
+            color: #00e5ff;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 🎵 Moving playlist header -->
+<div class="playlist-bar">
+    <div class="scroll-text">
+        <font size="6">
+        🎵 LANY - Prettiest Thing Ive Ever Seen • LANY • 🎵
+        </font>
+    </div>
+</div>
+
+<!-- MY PLAYLIST content -->
+<div class="audio-box">
+    <h2 class="soft2-title">SOFT 2 Album</h2>
+    <audio controls>
+        <source src="LANY - Prettiest Thing Ive Ever Seen (Official Lyric Video).mp3" type="audio/mpeg">
+    </audio>
+    <div class="gif-row">
+        <img class="gif" src="rocking.gif" alt="rocking gif">
+        <span class="gif-label">LANY SOFT 2 Album</span>
+        <img class="gif" src="rocking.gif" alt="rocking gif">
+    </div>
+</div>
+
+</body>
+</html>
+ </audio>
+</div>
+
+</body>
+</html>
